@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>大年初七 · 邀请函</title>
+  <meta name="description" content="大年初七来我家坐坐～" />
+  <style>
+    :root{
+      --bg1:#1a0b0b; --bg2:#3a0f0f;
+      --card:#ffffff14; --card2:#ffffff0f;
+      --text:#fff; --muted:#ffffffb3;
+      --gold:#f6d27a; --gold2:#d6a74e;
+      --shadow: 0 18px 50px rgba(0,0,0,.45);
+      --radius: 22px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; min-height:100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC","Microsoft YaHei", Arial, sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(1200px 800px at 20% 10%, #7a1f1f66, transparent 55%),
+        radial-gradient(1000px 700px at 80% 30%, #b84a2b44, transparent 55%),
+        linear-gradient(180deg,var(--bg2),var(--bg1));
+      display:flex; align-items:center; justify-content:center;
+      padding:18px;
+    }
+    .wrap{width:min(420px, 100%); position:relative}
+    .lantern{
+      position:absolute; top:-8px; right:14px; width:64px; height:64px;
+      opacity:.9; filter: drop-shadow(0 12px 18px rgba(0,0,0,.35));
+      animation: float 3.6s ease-in-out infinite;
+    }
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(8px)}}
+    .card{
+      background: linear-gradient(180deg, var(--card), var(--card2));
+      border:1px solid rgba(255,255,255,.18);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+      backdrop-filter: blur(10px);
+      transform: translateY(10px);
+      opacity:0;
+      animation: in .7s ease-out forwards;
+    }
+    @keyframes in{to{transform:translateY(0);opacity:1}}
+    .header{
+      padding:22px 20px 14px;
+      border-bottom: 1px solid rgba(255,255,255,.14);
+      position:relative;
+    }
+    .badge{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:6px 10px;
+      border-radius:999px;
+      background: rgba(246,210,122,.16);
+      border:1px solid rgba(246,210,122,.35);
+      color: var(--gold);
+      font-size:12px;
+      letter-spacing:.5px;
+    }
+    h1{margin:12px 0 6px; font-size:26px; line-height:1.15}
+    .sub{color:var(--muted); font-size:14px; line-height:1.6}
+    .content{padding:16px 20px 20px}
+    .grid{display:grid; gap:12px}
+    .item{
+      padding:14px 14px;
+      border-radius: 16px;
+      background: rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.12);
+    }
+    .k{color:var(--muted); font-size:12px; margin-bottom:6px}
+    .v{font-size:15px; line-height:1.55}
+    .addr{word-break:break-all}
+    .actions{display:grid; grid-template-columns: 1fr 1fr; gap:10px; margin-top:14px}
+    button{
+      border:0; border-radius: 14px;
+      padding:12px 12px;
+      font-size:15px; font-weight:600;
+      cursor:pointer;
+    }
+    .primary{
+      background: linear-gradient(135deg, var(--gold), var(--gold2));
+      color:#2b1705;
+    }
+    .ghost{
+      background: rgba(255,255,255,.10);
+      border:1px solid rgba(255,255,255,.18);
+      color: var(--text);
+    }
+    .footer{
+      padding:14px 20px 18px;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.55;
+      white-space:pre-line;
+    }
+    .toast{
+      position:fixed; left:50%; bottom:24px;
+      transform:translateX(-50%);
+      background:#000000cc; color:#fff;
+      padding:10px 14px; border-radius:999px;
+      font-size:13px; opacity:0; pointer-events:none;
+      transition: opacity .2s ease;
+    }
+    .toast.show{opacity:1}
+    .sep{height:1px;background:rgba(255,255,255,.12);margin:12px 0}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <svg class="lantern" viewBox="0 0 64 64" aria-hidden="true">
+      <defs>
+        <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#ffcf6a"/>
+          <stop offset="1" stop-color="#d39b2a"/>
+        </linearGradient>
+      </defs>
+      <path d="M32 6c8 0 14 3 14 7s-6 7-14 7-14-3-14-7 6-7 14-7z" fill="url(#g)" opacity=".9"/>
+      <path d="M18 18c4 3 9 4 14 4s10-1 14-4c3 4 5 9 5 16 0 16-10 22-19 22S13 50 13 34c0-7 2-12 5-16z" fill="#d12020"/>
+      <path d="M22 22c2 2 6 3 10 3" stroke="#ffd27a" stroke-width="2" opacity=".7" fill="none"/>
+      <path d="M32 56c7 0 12 2 12 4s-5 4-12 4-12-2-12-4 5-4 12-4z" fill="url(#g)" opacity=".9"/>
+      <path d="M32 4v6" stroke="#ffd27a" stroke-width="2"/>
+      <path d="M32 60v-4" stroke="#ffd27a" stroke-width="2"/>
+      <path d="M12 30h40" stroke="#ffffff22" stroke-width="2"/>
+    </svg>
+
+    <div class="card">
+      <div class="header">
+        <div class="badge">🧧 新年相聚 · 来家里坐坐</div>
+        <h1 id="title"></h1>
+        <div class="sub" id="subtitle"></div>
+      </div>
+
+      <div class="content">
+        <div class="grid">
+          <div class="item">
+            <div class="k">📅 日期</div>
+            <div class="v" id="dateText"></div>
+          </div>
+          <div class="item">
+            <div class="k">⏰ 时间</div>
+            <div class="v" id="timeText"></div>
+          </div>
+          <div class="item">
+            <div class="k">📍 地点</div>
+            <div class="v addr" id="addrText"></div>
+            <div class="sep"></div>
+            <div class="k">🚇 交通 / 备注</div>
+            <div class="v" id="noteText"></div>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button class="primary" id="navBtn">一键导航</button>
+          <button class="ghost" id="copyBtn">复制地址</button>
+        </div>
+      </div>
+
+      <div class="footer" id="footerText"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast">已复制</div>
+
+  <script>
+    // ======== 已为你填好：你也可以改“你的称呼/名字” ========
+    const CONFIG = {
+      title: "大年初七 · 欢迎来我家坐坐",
+      subtitle: "时间段不限～想来就来，一起热闹热闹，聊聊天～",
+      dateText: "2026年2月23日（大年初七）",
+      timeText: "时间段不限（随时欢迎）",
+      addressText: "滨康天曜城",
+      noteText: "地铁1号线 / 5号线直达：滨康路站 B 口",
+      footerText: "家里已备好茶水点心，就等大家来啦～\n到时见！——【你的称呼/名字】",
+
+      // 坐标：你没给经纬度，我先留空，用“地址搜索”导航（对亲戚也足够好用）
+      lat: null,
+      lng: null
+    };
+    // ====================================
+
+    // 渲染
+    document.getElementById("title").textContent = CONFIG.title;
+    document.getElementById("subtitle").textContent = CONFIG.subtitle;
+    document.getElementById("dateText").textContent = CONFIG.dateText;
+    document.getElementById("timeText").textContent = CONFIG.timeText;
+    document.getElementById("addrText").textContent = CONFIG.addressText;
+    document.getElementById("noteText").textContent = CONFIG.noteText;
+    document.getElementById("footerText").textContent = CONFIG.footerText;
+
+    // Toast
+    const toast = document.getElementById("toast");
+    function showToast(msg){
+      toast.textContent = msg;
+      toast.classList.add("show");
+      setTimeout(()=>toast.classList.remove("show"), 1600);
+    }
+
+    // 复制地址
+    document.getElementById("copyBtn").addEventListener("click", async ()=>{
+      const text = `${CONFIG.addressText}（${CONFIG.noteText}）`;
+      try{
+        await navigator.clipboard.writeText(text);
+        showToast("地址已复制");
+      }catch(e){
+        const ta = document.createElement("textarea");
+        ta.value = text;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand("copy");
+        document.body.removeChild(ta);
+        showToast("地址已复制");
+      }
+    });
+
+    // 一键导航：如果有坐标，用坐标；否则用地址搜索（最稳）
+    function openUrl(url){ window.location.href = url; }
+
+    document.getElementById("navBtn").addEventListener("click", ()=>{
+      const {lat, lng, addressText, title} = CONFIG;
+      const name = encodeURIComponent(title);
+      const addr = encodeURIComponent(addressText);
+
+      // 兜底：任何手机都可用（微信内也稳定）
+      const searchGaode = `https://uri.amap.com/search?keyword=${addr}&src=invite_h5`;
+      const searchTencent = `https://apis.map.qq.com/uri/v1/search?keyword=${addr}&referer=invite_h5`;
+
+      if (lat && lng) {
+        const gaode = `https://uri.amap.com/navigation?to=${lng},${lat},${name}&mode=car&policy=1&src=invite_h5&coordinate=gaode`;
+        const tencent = `https://apis.map.qq.com/uri/v1/routeplan?type=drive&to=${name}&tocoord=${lat},${lng}&coord_type=1&referer=invite_h5`;
+        openUrl(gaode);
+        setTimeout(()=>openUrl(tencent), 900);
+        setTimeout(()=>openUrl(searchGaode), 1800);
+      } else {
+        // 没坐标就直接“搜地址”（非常稳）
+        openUrl(searchGaode);
+        setTimeout(()=>openUrl(searchTencent), 900);
+      }
+    });
+  </script>
+</body>
+</html>
